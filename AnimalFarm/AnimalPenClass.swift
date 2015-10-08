@@ -8,12 +8,19 @@
 
 import Foundation
 
-class Pen {
+class AnimalPen {
     var animals = [String: Animal]()
     var animalPenName = String()
     
     init(animalPenName: String) {
         self.animalPenName = animalPenName
     }
+
+
+    func addAnimal(animalToAdd: Animal) {
+        animals[animalToAdd.name] = animalToAdd
+    }
+
 }
+
 
