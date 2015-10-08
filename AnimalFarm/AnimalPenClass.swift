@@ -20,6 +20,10 @@ class AnimalPen {
     func addAnimal(animalToAdd: Animal) {
         animals[animalToAdd.name] = animalToAdd
     }
+    
+    func updateAnimal(animalToUpdate: Animal) {
+        self.animals.updateValue(animalToUpdate, forKey: animalToUpdate.name)
+    }
 
 }
 
